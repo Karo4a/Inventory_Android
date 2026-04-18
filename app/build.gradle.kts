@@ -82,9 +82,9 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.9.7")
 
     //Room
-    implementation("androidx.room:room-runtime:2.8.4")
+    implementation("androidx.room:room-runtime:${rootProject.extra["room_version"]}")
     ksp("androidx.room:room-compiler:${rootProject.extra["room_version"]}")
-    implementation("androidx.room:room-ktx:2.8.4")
+    implementation("androidx.room:room-ktx:${rootProject.extra["room_version"]}")
 
     // Testing
     androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")
